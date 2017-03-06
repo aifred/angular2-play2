@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { MaterialModule } from '@angular/material';
+
+import { LoginModule } from './login/login.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
-    BrowserModule, MaterialModule
+    BrowserModule, LoginModule
   ],
   declarations: [
     AppComponent

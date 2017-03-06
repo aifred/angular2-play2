@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <div class="row justify-content-center mt-5">
+      <div class="col-sm-4">
+        <img src="../../assets/images/leonteq_header.png" class="img-fluid">
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      
+        <md-card class="col-sm-6">
+          <form #loginForm="ngForm">
+            <md-card-title>
+              Login to Application
+            </md-card-title>
+            <md-card-content>
+              <md-input-container class="col-sm-11">
+                <input mdInput placeholder="Email Address" name="email" 
+                  [(ngModel)]="user.email" required>
+              </md-input-container>
+              <md-input-container class="col-sm-11">
+                <input mdInput placeholder="Password" name="password" 
+                  [(ngModel)]="user.password" required>
+              </md-input-container>
+            </md-card-content>
+            <md-card-actions>
+              <div class="d-flex justify-content-center">
+                <button md-raised-button>Cancel</button>
+                <button md-raised-button class="btn-primary" 
+                  (click)="loginUser()">Login</button>
+              </div>
+            </md-card-actions>
+          </form>
+        </md-card>
+      
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
