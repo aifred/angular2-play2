@@ -8,9 +8,10 @@ import { User } from './user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  user = new User('','');
+  user = new User();
 
   loginUser() {
     // TODO: call Service API to login user
+    console.log(this.user);
   }
 }
