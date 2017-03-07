@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { PageNotFoundComponent } from './error/pagenotfound.component';
+import { PageNotFoundComponent } from './shared/error/pagenotfound.component';
 
 export const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
