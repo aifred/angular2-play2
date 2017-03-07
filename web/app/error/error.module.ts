@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '@angular/material';
-import { RouterModule } from '@angular/router';
+
+import { SharedModule } from '../shared/shared.module';
 
 import { PageNotFoundComponent } from './pagenotfound.component';
 
 @NgModule({
-  imports: [MaterialModule, RouterModule],
+  imports: [
+    SharedModule
+  ],
   declarations: [PageNotFoundComponent],
   exports: [PageNotFoundComponent]
 })
