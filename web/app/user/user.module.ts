@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { UserRoutingModule } from './user-routing.module';
 
-import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user.component';
 
 @NgModule({
@@ -12,10 +11,9 @@ import { UserComponent } from './user.component';
     UserRoutingModule
   ],
   declarations: [
-    LoginComponent, UserComponent
+    UserComponent
   ],
   exports: [
-    // LoginComponent
   ]
 })
 export class UserModule { }
